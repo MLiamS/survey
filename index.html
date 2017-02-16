@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Says</h1>
+      <form id="formInfo">
+        <div class="formDiv">
+          <h2>What's your name?</h2>
+          <label for="name"></label>
+          <input id="name" type="text" class="form-control">
+        </div>
+        <div class="formDiv">
+          <h2>What's your favorite food?</h2>
+          <select class="form-control" id="food">
+            <option>Sushi</option>
+            <option>Pizza</option>
+            <option>Pho</option>
+            <option>Cheetos</option>
+          </select>
+        </div>
+        <div class="formDiv">
+          <h2>What's your favorite music group, yes those are your only choices...</h2>
+          <div class="radio">
+            <label class="form-control">
+              <input id="band" type="radio" name="band" value="Radiohead">Radiohead
+            </label>
+          </div>
+          <div class="radio">
+            <label class="form-control">
+              <input id="band" type="radio" name="band" value="Greenday">Greenday
+            </label>
+          </div>
+          <div class="radio">
+            <label class="form-control">
+              <input id="band" type="radio" name="band" value="Britney Spears" checked>Britney Spears
+            </label>
+          </div>
+          <div class="radio">
+            <label class="form-control">
+              <input id="band" type="radio" name="band" value="Beck">Beck
+            </label>
+          </div>
+
+        </div>
+        <div class="formDiv">
+          <h2>When's your birthday?</h2>
+          <label for="birthday">Date of birth:</label>
+          <input id="birthday" type="date" class="form-control">
+        </div>
+        <div class="formDiv">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color" value="#FF0000">
+        </div>
+        <div class="button">
+          <button type="submit" class="btn btn-primary" name="button">Submit Suvrey</button>
+        </div>
+      </form>
+      <div class="output">
+        <h2>This is you in a nutshell</h2>
+        <p>Hello <span id="output1"></span>, you like to eat <span id="output3"></span> while listening to <span id="output2"></span> on your birthday <span id="output5"></span> and your favorite color is <span id="output4"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
+</html>
